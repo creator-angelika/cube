@@ -1,13 +1,12 @@
 import { OrbitControls } from "@react-three/drei";
+import { Cube } from "./Cube";
 
 export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <mesh>
-        <boxGeometry />
-        <meshNormalMaterial />
-      </mesh>
+      <ambientLight intensity={1}/>
+      <Cube />
     </>
   );
 };
